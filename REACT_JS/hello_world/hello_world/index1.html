@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>INtro To REACT</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("root");
+      const greeting = "hello";
+      const name = "world";
+      // const element = document.createElement("div");
+      // element.textContent = `${greeting} ${name}!`;
+      // rootElement.appendChild(element);
+
+      // const reactElement = React.createElement("div", {
+      //   children: `${greeting} ${name}!`,
+      // });
+
+      const reactElement = (
+        <div>
+          {" "}
+          {greeting} {name}!{" "}
+        </div>
+      );
+      ReactDOM.render(reactElement, rootElement);
+    </script>
+  </body>
+</html>
