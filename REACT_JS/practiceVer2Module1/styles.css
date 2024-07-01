@@ -1,0 +1,17 @@
+#cate input {
+  font-size: 16px;
+}
+*,
+*::after,
+*::before {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cate {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
